@@ -1,0 +1,54 @@
+[project]
+name = "task-promo-service"
+version = "0.1.0"
+description = "programm for validate promocodes"
+authors = [
+    {name = "Anatoliy Sigutin amoral28@mail.ru"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asgiref (==3.11.1)",
+    "attrs (==26.1.0)",
+    "black (==26.3.1)",
+    "click (==8.3.1)",
+    "django (==6.0.3)",
+    "djangorestframework (==3.17.0)",
+    "drf-spectacular (==0.29.0)",
+    "inflection (==0.5.1)",
+    "iniconfig (==2.3.0)",
+    "jsonschema (==4.26.0)",
+    "jsonschema-specifications (==2025.9.1)",
+    "mypy-extensions (==1.1.0)",
+    "packaging (==26.0)",
+    "pathspec (==1.0.4)",
+    "platformdirs (==4.9.4)",
+    "pluggy (==1.6.0)",
+    "psycopg2-binary (==2.9.11)",
+    "pygments (==2.19.2)",
+    "pytest (==9.0.2)",
+    "pytest-django (==4.12.0)",
+    "python-dotenv (==1.2.2)",
+    "pytokens (==0.4.1)",
+    "pyyaml (==6.0.3)",
+    "referencing (==0.37.0)",
+    "rpds-py (==0.30.0)",
+    "sqlparse (==0.5.5)",
+    "typing-extensions (==4.15.0)",
+    "uritemplate (==4.2.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "black (==26.3.1)",
+    "pytest (==9.0.2)",
+    "pytest-django (==4.12.0)",
+    "mypy-extensions (==1.1.0)",
+    "jsonschema (==4.26.0)",
+    "pygments (==2.19.2)"
+]
